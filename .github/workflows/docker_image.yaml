@@ -11,7 +11,7 @@ jobs:
         uses: actions/checkout@v3
       - name: build
         run: |
-          docker build. -t madhusoodanreddy/dockerweb-web:latest
+          docker build . -t madhusoodanreddy/dockerweb-web:latest
       - name: publish
         run: |
           docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
